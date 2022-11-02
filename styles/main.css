@@ -52,14 +52,14 @@ footer {
 }
 
 /* --------------- Adjust grid for roughly tablet-sized viewport */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 720px) {
   .mix-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 /* --------------- Adjust grid for computer-sized viewport */
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 1040px) {
   .mix-grid {
     grid-template-columns: repeat(4, 1fr);
   }
