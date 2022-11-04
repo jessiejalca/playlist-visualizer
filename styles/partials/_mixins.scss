@@ -21,8 +21,10 @@
     background-image: $primary-color;
     font-size: $small-head;
   } @else if $size == 'medium' {
+    aspect-ratio: auto;
     font-size: $medium-head;
   } @else if $size == 'large' {
+    aspect-ratio: auto;
     font-size: $large-head;
   }
 }
