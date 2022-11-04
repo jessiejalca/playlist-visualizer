@@ -1,0 +1,67 @@
+/* Jessie Jalca */
+/* Normalize & Add Fonts */
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@400;800&display=swap');
+
+// import partials
+@import 'partials/_variables';
+@import 'partials/_mixins';
+
+body { 
+  font-family: 'Gantari', sans-serif;
+  color: $text-color;
+  background-color: $secondary-color;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  padding-bottom: 1em;
+}
+
+/* --------------- Start with mobile-sized viewport */
+.mix-grid {
+  @include mix-grid;
+}
+.general-card {
+  @include general-card;
+}
+.title-card {
+  @include title-card;
+}
+.subhead-card {
+  @include subhead-card;
+}
+
+/* --------------- Adjust grid and styles for roughly tablet-sized viewport */
+@media screen and (min-width: $medium-break) {
+  .mix-grid {
+    @include mix-grid('medium');
+  }
+  .title-card {
+    @include title-card('medium');
+  }
+  .subhead-card {
+    @include subhead-card('medium');
+  }
+}
+
+/* --------------- Adjust grid and styles for roughly laptop-sized and larger viewport */
+@media screen and (min-width: $large-break) {
+  .mix-grid {
+    @include mix-grid('large');
+  }
+  .title-card {
+    @include title-card('large');
+  }
+  .subhead-card {
+    @include subhead-card('large');
+  }
+
+  .playlist-card {
+    aspect-ratio: auto;
+    grid-column: 2 / span 3;
+  }
+}

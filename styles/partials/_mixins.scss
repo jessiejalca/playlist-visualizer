@@ -1,0 +1,50 @@
+// ----------- Grid Layout
+@mixin mix-grid($size: 'small') {
+  @if $size == 'small' {
+    display: grid;
+    padding: 0.5em;
+    gap: 0.5em;
+    background-color: $secondary-color;
+    grid-template-columns: 1fr 1fr;
+  } @else if $size == 'medium' {
+    grid-template-columns: repeat(3, 1fr);
+  } @else if $size == 'large' {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// ----------- Title Card Style
+@mixin title-card($size: 'small') {
+  @if $size == 'small' {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-image: $primary-color;
+    font-size: $small-head;
+  } @else if $size == 'medium' {
+    font-size: $medium-head;
+  } @else if $size == 'large' {
+    font-size: $large-head;
+  }
+}
+
+// ----------- Subhead Card Style
+@mixin subhead-card($size: 'small') {
+  @if $size == 'small' {
+    background-color: $secondary-color;
+    font-size: $small-subhead;
+  } @else if $size == 'medium' {
+    font-size: $medium-subhead;
+  } @else if $size == 'large' {
+    font-size: $large-subhead;
+  }
+}
+
+// ----------- General Card Style
+@mixin general-card {
+  aspect-ratio: 1; // give each grid item a square ratio
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+  background-color: white;
+}
+
+// ----------- Embedded Playlist Style
