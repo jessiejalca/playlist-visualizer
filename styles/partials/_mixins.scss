@@ -45,6 +45,10 @@
   padding: 0.5rem;
   border-radius: 0.1rem;
   background-color: white;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 // ----------- Embedded Playlist Style
