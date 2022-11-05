@@ -18,6 +18,7 @@
   @if $size == 'small' {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+    padding: 0.5rem;
     background-image: $primary-color;
     font-size: $small-head;
   } @else if $size == 'medium' {
@@ -32,6 +33,7 @@
 // ----------- Subhead Card Style
 @mixin subhead-card($size: 'small') {
   @if $size == 'small' {
+    padding: 0.5rem;
     background-color: $secondary-color;
     font-size: $small-subhead;
   } @else if $size == 'medium' {
@@ -44,13 +46,9 @@
 // ----------- General Card Style
 @mixin general-card {
   aspect-ratio: 1; // give each grid item a square ratio
-  padding: 0.5rem;
   border-radius: 0.1rem;
   background-color: white;
-
-  img {
-    max-width: 100%;
-  }
+  overflow: hidden; // make sure the album cover images stay within the div and its rounded corners
 }
 
 // ----------- Embedded Playlist Style

@@ -1,5 +1,6 @@
 /* Jessie Jalca */
-/* Normalize & Add Fonts */
+/* --------------- Import files & APIs */
+/* normalize & add font family */
 @import "normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Gantari:wght@400;800&display=swap');
 
@@ -7,10 +8,15 @@
 @import 'partials/_variables';
 @import 'partials/_mixins';
 
+/* --------------- Basic styling for the whole page & footer */
 body { 
   font-family: 'Gantari', sans-serif;
   color: $text-color;
   background-color: $secondary-color;
+}
+
+img {
+  max-width: 100%;
 }
 
 footer {
@@ -18,7 +24,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 3em;
-  padding-bottom: 1em;
+  padding-bottom: 0.7em;
 }
 
 /* --------------- Start with mobile-sized viewport */
@@ -36,7 +42,7 @@ footer {
 }
 
 /* --------------- Adjust grid and styles for roughly tablet-sized viewport */
-@media screen and (min-width: $medium-break) {
+@media screen and (min-width: $medium-break) and (max-width: $large-break) {
   .mix-grid {
     @include mix-grid('medium');
   }
