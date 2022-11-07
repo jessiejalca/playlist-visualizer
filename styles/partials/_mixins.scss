@@ -30,12 +30,15 @@
     padding: 0.5rem;
     background-image: $primary-color;
     font-size: $small-head;
+    line-height: 170%;
   } @else if $size == 'medium' {
     aspect-ratio: auto;
     font-size: $medium-head;
   } @else if $size == 'large' {
     aspect-ratio: auto;
     font-size: $large-head;
+  } @else {
+    font-size: $xlarge-head;
   }
 }
 

@@ -1,9 +1,10 @@
 // ----------- Breakpoints
 $medium-break: 720px; // roughly tablet-size
 $large-break: 1120px; // roughly laptop-size
+$xlarge-break: 1600px;
 
 // ----------- Colors
-$primary-color: linear-gradient(135deg, #020024 0%, #090979 35%, #06829b 100%);
+$primary-color: linear-gradient(135deg, #020024 5%, #090979 45%, #06829b 100%);
 $secondary-color: #0f0f0f;
 $text-color: white;
 
@@ -17,3 +18,4 @@ $medium-song: 1.4rem;
 $large-head: 3.8rem; // 1080px (laptop)
 $large-subhead: 2.2rem;
 $large-song: 1.6rem;
+$xlarge-head: 4.8rem;

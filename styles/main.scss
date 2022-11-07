@@ -80,3 +80,9 @@ footer {
     grid-column: 2 / span 3;
   }
 }
+
+@media screen and (min-width: $xlarge-break) {
+  .title-card {
+    @include title-card('xlarge');
+  }
+}

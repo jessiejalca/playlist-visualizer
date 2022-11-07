@@ -43,8 +43,9 @@ footer {
   grid-column: 1/span 2;
   grid-row: 1/span 2;
   padding: 0.5rem;
-  background-image: linear-gradient(135deg, #020024 0%, #090979 35%, #06829b 100%);
+  background-image: linear-gradient(135deg, #020024 5%, #090979 45%, #06829b 100%);
   font-size: 3rem;
+  line-height: 170%;
 }
 
 .subhead-card {
@@ -108,5 +109,10 @@ footer {
   .playlist-card {
     aspect-ratio: auto;
     grid-column: 2/span 3;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .title-card {
+    font-size: 4.8rem;
   }
 }/*# sourceMappingURL=main.css.map */
