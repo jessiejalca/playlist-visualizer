@@ -2,8 +2,8 @@
 @mixin mix-grid($size: 'small') {
   @if $size == 'small' {
     display: grid;
-    padding: 0.5em;
-    gap: 0.5em;
+    padding: 0.8em;
+    gap: 0.4em;
     background-color: $secondary-color;
     grid-template-columns: 1fr 1fr;
   } @else if $size == 'medium' {
@@ -16,8 +16,7 @@
 // ----------- General Card Style
 @mixin general-card {
   aspect-ratio: 1; // give each grid item a square ratio
-  border-radius: 0.5rem;
-  background-color: white;
+  border-radius: 1.2rem;
   overflow: hidden; // make sure the album cover images stay within the div and its rounded corners
   position: relative;
 }
@@ -71,10 +70,11 @@
     }
     .song-title {
       padding-top: 0.6rem;
-      font-weight: 800;
+      font-weight: 600;
     }
     .song-artist {
       padding-bottom: 0.6rem;
+      font-weight: 300;
     }
   } @else if $size == 'medium' {
     font-size: $medium-song;

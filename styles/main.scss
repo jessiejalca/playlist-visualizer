@@ -2,7 +2,7 @@
 /* --------------- Import files & APIs */
 /* normalize & add font family */
 @import "normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@300;400;600;800&display=swap');
 
 // import partials
 @import 'partials/_variables';
@@ -42,6 +42,9 @@ footer {
 }
 .song-info {
   @include song-info;
+}
+.song {
+  // border: 2px solid white;
 }
 
 /* --------------- Adjust grid and styles for roughly tablet-sized viewport */
