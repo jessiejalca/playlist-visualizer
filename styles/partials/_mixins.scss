@@ -13,6 +13,15 @@
   }
 }
 
+// ----------- General Card Style
+@mixin general-card {
+  aspect-ratio: 1; // give each grid item a square ratio
+  border-radius: 0.5rem;
+  background-color: white;
+  overflow: hidden; // make sure the album cover images stay within the div and its rounded corners
+  position: relative;
+}
+
 // ----------- Title Card Style
 @mixin title-card($size: 'small') {
   @if $size == 'small' {
@@ -43,12 +52,33 @@
   }
 }
 
-// ----------- General Card Style
-@mixin general-card {
-  aspect-ratio: 1; // give each grid item a square ratio
-  border-radius: 0.1rem;
-  background-color: white;
-  overflow: hidden; // make sure the album cover images stay within the div and its rounded corners
+// ----------- Song Info Style
+@mixin song-info($size: 'small') {
+  @if $size == 'small' {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    font-size: $small-song;
+    p {
+      margin: auto;
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+    }
+    .song-title {
+      padding-top: 0.6rem;
+      font-weight: 800;
+    }
+    .song-artist {
+      padding-bottom: 0.6rem;
+    }
+  } @else if $size == 'medium' {
+    font-size: $medium-song;
+  } @else if $size == 'large' {
+    font-size: $large-song;
+  }
+
 }
 
 // ----------- Embedded Playlist Style

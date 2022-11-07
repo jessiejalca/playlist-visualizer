@@ -1,16 +1,19 @@
 // ----------- Breakpoints
-$medium-break: 640px; // roughly tablet-size
-$large-break: 1000px; // roughly laptop-size
+$medium-break: 720px; // roughly tablet-size
+$large-break: 1120px; // roughly laptop-size
 
 // ----------- Colors
 $primary-color: linear-gradient(135deg, #020024 0%, #090979 35%, #06829b 100%);
-$secondary-color: #0d0d0d;
+$secondary-color: #0f0f0f;
 $text-color: white;
 
 // ----------- Font Sizes
-$small-head: 3em; // smaller than 720px (mobile)
-$small-subhead: 1.6em;
+$small-head: 3rem; // smaller than 720px (mobile)
+$small-subhead: 1.8rem;
+$small-song: 1.2rem;
 $medium-head: 3.4rem; // 720px (tablet)
-$medium-subhead: 1.8rem;
+$medium-subhead: 2rem;
+$medium-song: 1.4rem;
 $large-head: 3.8rem; // 1080px (laptop)
-$large-subhead: 2rem;
+$large-subhead: 2.2rem;
+$large-song: 1.6rem;

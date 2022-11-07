@@ -40,6 +40,9 @@ footer {
 .subhead-card {
   @include subhead-card;
 }
+.song-info {
+  @include song-info;
+}
 
 /* --------------- Adjust grid and styles for roughly tablet-sized viewport */
 @media screen and (min-width: $medium-break) and (max-width: $large-break) {
@@ -51,6 +54,9 @@ footer {
   }
   .subhead-card {
     @include subhead-card('medium');
+  }
+  .song-info {
+    @include song-info('medium');
   }
 }
 
@@ -64,6 +70,9 @@ footer {
   }
   .subhead-card {
     @include subhead-card('large');
+  }
+  .song-info {
+    @include song-info('large');
   }
 
   .playlist-card {
