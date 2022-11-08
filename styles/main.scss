@@ -41,7 +41,6 @@ footer {
   @include subhead-card;
 }
 .song-info {
-  // height: 10%;
   visibility: hidden;
   @include song-info;
 }
