@@ -26,7 +26,7 @@
   @if $size == 'small' {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
-    padding: 0.5rem;
+    padding: 6%;
     background-image: $primary-color;
     font-size: $small-head;
     line-height: 170%;
@@ -44,7 +44,7 @@
 // ----------- Subhead Card Style
 @mixin subhead-card($size: 'small') {
   @if $size == 'small' {
-    padding: 0.5rem;
+    padding: 8%;
     background-color: $secondary-color;
     font-size: $small-subhead;
   } @else if $size == 'medium' {
