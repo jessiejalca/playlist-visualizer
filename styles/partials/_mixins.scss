@@ -62,16 +62,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    @include frosted-glass;
-    // background-color: black;
     font-size: $small-song;
+    @include frosted-glass;
     p {
       margin: auto;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: 6%;
+      padding-right: 6%;
     }
     .song-title {
-      padding-top: 1rem;
+      padding-top: 6%;
       font-weight: 600;
     }
     .song-artist {

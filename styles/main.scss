@@ -50,8 +50,8 @@ footer {
     visibility: visible;
   }
 }
-.playlist-card {
-  border: 2px solid white;
+.song:hover, .playlist-card:hover {
+  border: 3px solid white;
 }
 
 /* --------------- Adjust grid and styles for roughly tablet-sized viewport */
