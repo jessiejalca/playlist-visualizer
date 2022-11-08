@@ -61,20 +61,22 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: black;
+    height: 100%;
+    @include frosted-glass;
+    // background-color: black;
     font-size: $small-song;
     p {
       margin: auto;
-      padding-left: 0.6rem;
-      padding-right: 0.6rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
     .song-title {
-      padding-top: 0.6rem;
+      padding-top: 1rem;
       font-weight: 600;
     }
     .song-artist {
-      padding-bottom: 0.6rem;
       font-weight: 300;
+      font-size: 80%;
     }
   } @else if $size == 'medium' {
     font-size: $medium-song;
@@ -84,4 +86,8 @@
 
 }
 
-// ----------- Embedded Playlist Style
+// Frosted Glass Effect
+@mixin frosted-glass {
+  background-color: #00000026;  
+  backdrop-filter: blur(5px);
+}

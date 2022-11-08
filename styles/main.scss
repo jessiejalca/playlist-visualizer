@@ -41,10 +41,17 @@ footer {
   @include subhead-card;
 }
 .song-info {
+  // height: 10%;
+  visibility: hidden;
   @include song-info;
 }
-.song {
-  // border: 2px solid white;
+.song:hover {
+  .song-info {
+    visibility: visible;
+  }
+}
+.playlist-card {
+  border: 2px solid white;
 }
 
 /* --------------- Adjust grid and styles for roughly tablet-sized viewport */
