@@ -51,6 +51,8 @@
     font-size: $medium-subhead;
   } @else if $size == 'large' {
     font-size: $large-subhead;
+  } @else if $size == 'xlarge' {
+    font-size: $xlarge-subhead;
   }
 }
 
@@ -82,9 +84,7 @@
   } @else if $size == 'large' {
     font-size: $large-song;
   }
-
 }
-
 // Frosted Glass Effect
 @mixin frosted-glass {
   background-color: #00000060;  

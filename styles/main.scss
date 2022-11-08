@@ -48,9 +48,7 @@ footer {
   .song-info {
     visibility: visible;
   }
-}
-.song:hover, .playlist-card:hover {
-  border: 3px solid white;
+  border: 2px solid white;
 }
 
 /* --------------- Adjust grid and styles for roughly tablet-sized viewport */
@@ -83,7 +81,6 @@ footer {
   .song-info {
     @include song-info('large');
   }
-
   .playlist-card {
     aspect-ratio: auto;
     grid-column: 2 / span 3;
@@ -93,5 +90,8 @@ footer {
 @media screen and (min-width: $xlarge-break) {
   .title-card {
     @include title-card('xlarge');
+  }
+  .subhead-card {
+    @include subhead-card('xlarge');
   }
 }
