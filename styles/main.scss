@@ -51,8 +51,18 @@ footer {
   border: 2px solid white;
 }
 
+/* --------------- Adjust head and subhead font size for small browser viewport widths */
+@media screen and (min-width: $smallish-break) {
+  .title-card {
+    @include title-card('smallish');
+  }
+  .subhead-card {
+    @include subhead-card('smallish');
+  }
+}
+
 /* --------------- Adjust grid and styles for roughly tablet-sized viewport */
-@media screen and (min-width: $medium-break) and (max-width: $large-break) {
+@media screen and (min-width: $medium-break) {
   .mix-grid {
     @include mix-grid('medium');
   }

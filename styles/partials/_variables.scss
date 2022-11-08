@@ -1,4 +1,5 @@
 // ----------- Breakpoints
+$smallish-break: 480px; // small browser viewport
 $medium-break: 720px; // roughly tablet-size
 $large-break: 1120px; // roughly laptop-size
 $xlarge-break: 1600px;
@@ -9,9 +10,11 @@ $secondary-color: #191919;
 $text-color: white;
 
 // ----------- Font Sizes
-$small-head: 3rem; // smaller than 720px (mobile)
-$small-subhead: 1.8rem;
+$small-head: 2.2rem; // smaller than 720px (mobile)
+$small-subhead: 1.4rem;
 $small-song: 1.4rem;
+$smallish-head: 3rem;
+$smallish-subhead: 1.8rem;
 $medium-head: 3.4rem; // 720px (tablet)
 $medium-subhead: 2rem;
 $medium-song: 1.6rem;

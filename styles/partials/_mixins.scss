@@ -30,13 +30,15 @@
     background-image: $primary-color;
     font-size: $small-head;
     line-height: 170%;
+  } @else if $size == 'smallish' {
+    font-size: $smallish-head;
   } @else if $size == 'medium' {
     aspect-ratio: auto;
     font-size: $medium-head;
   } @else if $size == 'large' {
     aspect-ratio: auto;
     font-size: $large-head;
-  } @else {
+  } @else if $size == 'xlarge' {
     font-size: $xlarge-head;
   }
 }
@@ -47,6 +49,8 @@
     padding: 8%;
     background-color: $secondary-color;
     font-size: $small-subhead;
+  } @else if $size == 'smallish' {
+    font-size: $smallish-subhead;
   } @else if $size == 'medium' {
     font-size: $medium-subhead;
   } @else if $size == 'large' {
